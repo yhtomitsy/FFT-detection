@@ -1,0 +1,390 @@
+###############################################################################
+#
+# IAR ELF Linker V7.80.1.11864/W32 for ARM                10/Jan/2018  12:12:18
+# Copyright 2007-2016 IAR Systems AB.
+#
+#    Output file  =  
+#        D:\YADisk\#1_work\#cryingBaby\nRF51_SDK_10.0.0_dc26b5e\examples\peripheral\cryDetection\pca10028\iar\_build\simple_adc_pca10028.out
+#    Map file     =  
+#        D:\YADisk\#1_work\#cryingBaby\nRF51_SDK_10.0.0_dc26b5e\examples\peripheral\cryDetection\pca10028\iar\_build\simple_adc_pca10028.map
+#    Command line =  
+#        D:\YADisk\#1_work\#cryingBaby\nRF51_SDK_10.0.0_dc26b5e\examples\peripheral\cryDetection\pca10028\iar\_build\app_error.o
+#        D:\YADisk\#1_work\#cryingBaby\nRF51_SDK_10.0.0_dc26b5e\examples\peripheral\cryDetection\pca10028\iar\_build\app_fifo.o
+#        D:\YADisk\#1_work\#cryingBaby\nRF51_SDK_10.0.0_dc26b5e\examples\peripheral\cryDetection\pca10028\iar\_build\app_uart_fifo.o
+#        D:\YADisk\#1_work\#cryingBaby\nRF51_SDK_10.0.0_dc26b5e\examples\peripheral\cryDetection\pca10028\iar\_build\app_util_platform.o
+#        D:\YADisk\#1_work\#cryingBaby\nRF51_SDK_10.0.0_dc26b5e\examples\peripheral\cryDetection\pca10028\iar\_build\iar_startup_nrf51.o
+#        D:\YADisk\#1_work\#cryingBaby\nRF51_SDK_10.0.0_dc26b5e\examples\peripheral\cryDetection\pca10028\iar\_build\main.o
+#        D:\YADisk\#1_work\#cryingBaby\nRF51_SDK_10.0.0_dc26b5e\examples\peripheral\cryDetection\pca10028\iar\_build\nrf_adc.o
+#        D:\YADisk\#1_work\#cryingBaby\nRF51_SDK_10.0.0_dc26b5e\examples\peripheral\cryDetection\pca10028\iar\_build\nrf_assert.o
+#        D:\YADisk\#1_work\#cryingBaby\nRF51_SDK_10.0.0_dc26b5e\examples\peripheral\cryDetection\pca10028\iar\_build\nrf_delay.o
+#        D:\YADisk\#1_work\#cryingBaby\nRF51_SDK_10.0.0_dc26b5e\examples\peripheral\cryDetection\pca10028\iar\_build\nrf_drv_common.o
+#        D:\YADisk\#1_work\#cryingBaby\nRF51_SDK_10.0.0_dc26b5e\examples\peripheral\cryDetection\pca10028\iar\_build\nrf_drv_uart.o
+#        D:\YADisk\#1_work\#cryingBaby\nRF51_SDK_10.0.0_dc26b5e\examples\peripheral\cryDetection\pca10028\iar\_build\retarget.o
+#        D:\YADisk\#1_work\#cryingBaby\nRF51_SDK_10.0.0_dc26b5e\examples\peripheral\cryDetection\pca10028\iar\_build\system_nrf51.o
+#        --redirect _Printf=_PrintfFull --redirect _Scanf=_ScanfFull -o
+#        D:\YADisk\#1_work\#cryingBaby\nRF51_SDK_10.0.0_dc26b5e\examples\peripheral\cryDetection\pca10028\iar\_build\simple_adc_pca10028.out
+#        --map
+#        D:\YADisk\#1_work\#cryingBaby\nRF51_SDK_10.0.0_dc26b5e\examples\peripheral\cryDetection\pca10028\iar\_build\simple_adc_pca10028.map
+#        --config
+#        D:\YADisk\#1_work\#cryingBaby\nRF51_SDK_10.0.0_dc26b5e\examples\peripheral\cryDetection\pca10028\iar\simple_adc_iar_nRF5x.icf
+#        --warnings_are_errors --entry __iar_program_start --inline --vfe
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x00000000 { ro section .intvec };
+"P1":  place in [from 0x00000000 to 0x0003ffff] { ro };
+"P2":  place in [from 0x20000000 to 0x20007fff] { rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+ { section .intvec };
+
+  Section             Kind        Address    Size  Object
+  -------             ----        -------    ----  ------
+"A0":                                        0xc0
+  .intvec             ro code  0x00000000    0xc0  iar_startup_nrf51.o [1]
+                             - 0x000000c0    0xc0
+
+"P1":                                      0x154c
+  .text               ro code  0x000000c0   0x854  main.o [1]
+  .text               ro code  0x00000914   0x120  FltAddSub.o [4]
+  .text               ro code  0x00000a34    0xaa  FltDiv.o [4]
+  .text               ro code  0x00000ade     0x2  iar_startup_nrf51.o [1]
+  .text               ro code  0x00000ae0    0x32  I32ToFlt.o [4]
+  .text               ro code  0x00000b12     0x2  iar_startup_nrf51.o [1]
+  .text               ro code  0x00000b14    0x90  nrf_adc.o [1]
+  .text               ro code  0x00000ba4    0xb0  FltMul.o [4]
+  .text               ro code  0x00000c54    0x26  FltCmpLe.o [4]
+  .text               ro code  0x00000c7a     0x2  iar_startup_nrf51.o [1]
+  .text               ro code  0x00000c7c    0x32  FltToDbl.o [4]
+  .text               ro code  0x00000cae    0xbe  sqrt.o [4]
+  .text               ro code  0x00000d6c    0x62  DblToFlt.o [4]
+  .text               ro code  0x00000dce     0x2  iar_startup_nrf51.o [1]
+  .text               ro code  0x00000dd0    0x3a  FltToS32.o [4]
+  .text               ro code  0x00000e0a    0xe0  I32DivModFast.o [5]
+  .text               ro code  0x00000eea   0x184  DblMul.o [4]
+  .text               ro code  0x0000106e     0x2  iar_startup_nrf51.o [1]
+  .text               ro code  0x00001070    0x4e  DblToI32.o [4]
+  .text               ro code  0x000010be     0x2  iar_startup_nrf51.o [1]
+  .text               ro code  0x000010c0     0xc  iarEdom.o [5]
+  .text               ro code  0x000010cc    0x10  errno.o [3]
+  .text               ro code  0x000010dc   0x264  nrf_drv_uart.o [1]
+  .text               ro code  0x00001340    0xf0  system_nrf51.o [1]
+  .text               ro code  0x00001430    0x3c  zero_init3.o [5]
+  .rodata             const    0x0000146c    0x38  main.o [1]
+  .rodata             const    0x000014a4    0x38  main.o [1]
+  .text               ro code  0x000014dc    0x30  copy_init3.o [5]
+  .text               ro code  0x0000150c    0x2c  iar_startup_nrf51.o [1]
+  .text               ro code  0x00001538    0x28  data_init.o [5]
+  .iar.init_table     const    0x00001560    0x24  - Linker created -
+  .text               ro code  0x00001584    0x1a  cmain.o [5]
+  .text               ro code  0x0000159e     0x8  exit.o [3]
+  .text               ro code  0x000015a6     0x2  iar_startup_nrf51.o [1]
+  .text               ro code  0x000015a8     0xa  cexit.o [5]
+  .text               ro code  0x000015b2     0x2  iar_startup_nrf51.o [1]
+  .text               ro code  0x000015b4     0xc  XXexit.o [5]
+  Initializer bytes   const    0x000015c0    0x10  <for P2-1>
+  .text               ro code  0x000015d0     0xc  cstartup_M.o [5]
+  .rodata             const    0x000015dc     0x8  main.o [1]
+  .text               ro code  0x000015e4     0x2  iar_startup_nrf51.o [1]
+  .text               ro code  0x000015e6     0x2  iar_startup_nrf51.o [1]
+  .text               ro code  0x000015e8     0x2  iar_startup_nrf51.o [1]
+  .text               ro code  0x000015ea     0x2  iar_startup_nrf51.o [1]
+  .text               ro code  0x000015ec     0x2  iar_startup_nrf51.o [1]
+  .text               ro code  0x000015ee     0x2  iar_startup_nrf51.o [1]
+  .text               ro code  0x000015f0     0x2  iar_startup_nrf51.o [1]
+  .text               ro code  0x000015f2     0x2  iar_startup_nrf51.o [1]
+  .text               ro code  0x000015f4     0x2  iar_startup_nrf51.o [1]
+  .text               ro code  0x000015f6     0x2  iar_startup_nrf51.o [1]
+  .text               ro code  0x000015f8     0x2  iar_startup_nrf51.o [1]
+  .text               ro code  0x000015fa     0x2  iar_startup_nrf51.o [1]
+  .text               ro code  0x000015fc     0x2  iar_startup_nrf51.o [1]
+  .text               ro code  0x000015fe     0x2  iar_startup_nrf51.o [1]
+  .text               ro code  0x00001600     0x2  iar_startup_nrf51.o [1]
+  .text               ro code  0x00001602     0x2  iar_startup_nrf51.o [1]
+  .text               ro code  0x00001604     0x2  iar_startup_nrf51.o [1]
+  .text               ro code  0x00001606     0x2  iar_startup_nrf51.o [1]
+  .text               ro code  0x00001608     0x2  iar_startup_nrf51.o [1]
+  .text               ro code  0x0000160a     0x2  iar_startup_nrf51.o [1]
+  .rodata             const    0x0000160c     0x0  zero_init3.o [5]
+  .rodata             const    0x0000160c     0x0  copy_init3.o [5]
+                             - 0x0000160c  0x154c
+
+"P2", part 1 of 3:                           0x10
+  P2-1                         0x20000000    0x10  <Init block>
+    .data             inited   0x20000000     0x4  main.o [1]
+    .data             inited   0x20000004     0x4  main.o [1]
+    .data             inited   0x20000008     0x4  system_nrf51.o [1]
+    __DLIB_PERTHREAD  inited   0x2000000c     0x4  errno.o [3]
+                             - 0x20000010    0x10
+
+"P2", part 2 of 3:                          0x800
+  CSTACK                       0x20000010   0x800  <Block>
+    CSTACK            uninit   0x20000010   0x800  <Block tail>
+                             - 0x20000810   0x800
+
+"P2", part 3 of 3:                          0xd84
+  .bss                zero     0x20000810   0x200  main.o [1]
+  .bss                zero     0x20000a10   0x200  main.o [1]
+  .bss                zero     0x20000c10   0x200  main.o [1]
+  .bss                zero     0x20000e10   0x200  main.o [1]
+  .bss                zero     0x20001010   0x200  main.o [1]
+  .bss                zero     0x20001210   0x200  main.o [1]
+  .bss                zero     0x20001410   0x100  main.o [1]
+  .bss                zero     0x20001510    0x40  main.o [1]
+  .bss                zero     0x20001550    0x18  nrf_drv_uart.o [1]
+  .bss                zero     0x20001568     0x4  main.o [1]
+  .bss                zero     0x2000156c     0x4  main.o [1]
+  .bss                zero     0x20001570     0x4  main.o [1]
+  .bss                zero     0x20001574     0x4  main.o [1]
+  .bss                zero     0x20001578     0x4  main.o [1]
+  .bss                zero     0x2000157c     0x4  main.o [1]
+  .bss                zero     0x20001580     0x4  main.o [1]
+  .bss                zero     0x20001584     0x2  main.o [1]
+  .bss                zero     0x20001586     0x2  main.o [1]
+  .bss                zero     0x20001588     0x2  main.o [1]
+  .bss                zero     0x2000158a     0x2  main.o [1]
+  .bss                zero     0x2000158c     0x2  main.o [1]
+  .bss                zero     0x2000158e     0x1  main.o [1]
+  .bss                zero     0x2000158f     0x1  main.o [1]
+  .bss                zero     0x20001590     0x1  main.o [1]
+  .bss                zero     0x20001591     0x1  main.o [1]
+                             - 0x20001592   0xd82
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0xd82:
+          0x20000810  0xd82
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0x10:
+          0x000015c0   0x10
+    1 destination range, total size 0x10:
+          0x20000000   0x10
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module               ro code  ro data  rw data
+    ------               -------  -------  -------
+D:\YADisk\#1_work\#cryingBaby\nRF51_SDK_10.0.0_dc26b5e\examples\peripheral\cryDetection\pca10028\iar\_build: [1]
+    iar_startup_nrf51.o      292
+    main.o                 2 132      128    3 442
+    nrf_adc.o                144
+    nrf_drv_uart.o           612                24
+    system_nrf51.o           240        4        4
+    ----------------------------------------------
+    Total:                 3 420      132    3 470
+
+command line: [2]
+    ----------------------------------------------
+    Total:
+
+dl6M_tlf.a: [3]
+    errno.o                   16        4        4
+    exit.o                     8
+    ----------------------------------------------
+    Total:                    24        4        4
+
+m6M_tl.a: [4]
+    DblMul.o                 388
+    DblToFlt.o                98
+    DblToI32.o                78
+    FltAddSub.o              288
+    FltCmpLe.o                38
+    FltDiv.o                 170
+    FltMul.o                 176
+    FltToDbl.o                50
+    FltToS32.o                58
+    I32ToFlt.o                50
+    sqrt.o                   190
+    ----------------------------------------------
+    Total:                 1 584
+
+rt6M_tl.a: [5]
+    I32DivModFast.o          224
+    XXexit.o                  12
+    cexit.o                   10
+    cmain.o                   26
+    copy_init3.o              48
+    cstartup_M.o              12
+    data_init.o               40
+    iarEdom.o                 12
+    zero_init3.o              60
+    ----------------------------------------------
+    Total:                   444
+
+    Linker created                     36    2 048
+--------------------------------------------------
+    Grand Total:           5 472      172    5 522
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+.iar.init_table$$Base   0x00001560          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x00001584          --   Gb  - Linker created -
+?main                   0x00001585         Code  Gb  cmain.o [5]
+ADC_IRQHandler          0x000001e3   0x8c  Code  Gb  main.o [1]
+ADC_IRQHandler::measureArr
+                        0x20000000    0x4  Data  Lc  main.o [1]
+ADC_IRQHandler::offset  0x20000004    0x4  Data  Lc  main.o [1]
+ADC_IRQHandler::sampleCount
+                        0x20001568    0x4  Data  Lc  main.o [1]
+CSTACK$$Base            0x20000010          --   Gb  - Linker created -
+CSTACK$$Limit           0x20000810          --   Gb  - Linker created -
+FFT                     0x000002b5  0x1f8  Code  Gb  main.o [1]
+FFT::Icoef              0x000014a4   0x38  Data  Lc  main.o [1]
+FFT::Rcoef              0x0000146c   0x38  Data  Lc  main.o [1]
+NVIC_EnableIRQ          0x000000c1    0xe  Code  Lc  main.o [1]
+NVIC_SetPriority        0x000000cf   0x84  Code  Lc  main.o [1]
+Region$$Table$$Base     0x00001560          --   Gb  - Linker created -
+Region$$Table$$Limit    0x00001584          --   Gb  - Linker created -
+SystemCoreClock         0x20000008    0x4  Data  Gb  system_nrf51.o [1]
+SystemInit              0x00001341   0x28  Code  Gb  system_nrf51.o [1]
+UART0_IRQHandler        0x00001201  0x138  Code  Gb  nrf_drv_uart.o [1]
+__Vectors               0x00000000          --   Gb  iar_startup_nrf51.o [1]
+__Vectors_End           0x000000c0         Data  Gb  iar_startup_nrf51.o [1]
+__Vectors_Size {Abs}    0x000000c0          --   Gb  iar_startup_nrf51.o [1]
+__aeabi_cfcmple         0x00000c55         Code  Gb  FltCmpLe.o [4]
+__aeabi_d2f             0x00000d6d         Code  Gb  DblToFlt.o [4]
+__aeabi_d2iz            0x00001071         Code  Gb  DblToI32.o [4]
+__aeabi_dmul            0x00000eeb         Code  Gb  DblMul.o [4]
+__aeabi_errno_addr      0x000010cd    0xa  Code  Gb  errno.o [3]
+__aeabi_f2d             0x00000c7d         Code  Gb  FltToDbl.o [4]
+__aeabi_f2iz            0x00000dd1         Code  Gb  FltToS32.o [4]
+__aeabi_fadd            0x00000915         Code  Gb  FltAddSub.o [4]
+__aeabi_fdiv            0x00000a35         Code  Gb  FltDiv.o [4]
+__aeabi_fmul            0x00000ba5         Code  Gb  FltMul.o [4]
+__aeabi_fsub            0x00000985         Code  Gb  FltAddSub.o [4]
+__aeabi_i2f             0x00000ae1         Code  Gb  I32ToFlt.o [4]
+__aeabi_idiv            0x00000e37         Code  Gb  I32DivModFast.o [5]
+__aeabi_idivmod         0x00000e37         Code  Gb  I32DivModFast.o [5]
+__aeabi_uidiv           0x00000e3d         Code  Gb  I32DivModFast.o [5]
+__aeabi_uidivmod        0x00000e3d         Code  Gb  I32DivModFast.o [5]
+__cmain                 0x00001585         Code  Gb  cmain.o [5]
+__exit                  0x000015b5         Code  Gb  XXexit.o [5]
+__iar_Errno             0x2000000c    0x4  Data  Gb  errno.o [3]
+__iar_copy_init3        0x000014dd   0x30  Code  Gb  copy_init3.o [5]
+__iar_d2uiz             0x00001095         Code  Gb  DblToI32.o [4]
+__iar_data_init3        0x00001539   0x28  Code  Gb  data_init.o [5]
+__iar_edom              0x000010c1         Code  Gb  iarEdom.o [5]
+__iar_program_start     0x000015d1         Code  Gb  cstartup_M.o [5]
+__iar_sqrt              0x00000caf         Code  Gb  sqrt.o [4]
+__iar_ui2f              0x00000af9         Code  Gb  I32ToFlt.o [4]
+__iar_zero_init3        0x00001431   0x3c  Code  Gb  zero_init3.o [5]
+__vector_table          0x00000000         Data  Gb  iar_startup_nrf51.o [1]
+_call_main              0x00001591         Code  Gb  cmain.o [5]
+_exit                   0x000015a9         Code  Gb  cexit.o [5]
+_main                   0x0000159b         Code  Gb  cmain.o [5]
+adcConfig               0x0000026f   0x30  Code  Gb  main.o [1]
+calcNewOffset           0x00000199   0x4a  Code  Gb  main.o [1]
+data1Ready              0x2000158e    0x1  Data  Gb  main.o [1]
+data2Ready              0x2000158f    0x1  Data  Gb  main.o [1]
+exit                    0x0000159f    0x8  Code  Gb  exit.o [3]
+inArrayI                0x20001410  0x100  Data  Gb  main.o [1]
+inArrayR                0x20000810  0x200  Data  Gb  main.o [1]
+is_disabled_in_debug_needed
+                        0x000013d9   0x38  Code  Lc  system_nrf51.o [1]
+is_manual_peripheral_setup_needed
+                        0x00001369   0x70  Code  Lc  system_nrf51.o [1]
+m_cb                    0x20001550   0x18  Data  Lc  nrf_drv_uart.o [1]
+main                    0x00000521  0x38c  Code  Gb  main.o [1]
+main{1}{2}{3}{4}::averPower
+                        0x20001570    0x4  Data  Lc  main.o [1]
+main{1}{2}{3}{4}::averPowerArr
+                        0x20000e10  0x200  Data  Lc  main.o [1]
+main{1}{2}{3}{4}::averPowerTt
+                        0x2000157c    0x4  Data  Lc  main.o [1]
+main{1}{2}{3}{4}::cryDetected
+                        0x20001591    0x1  Data  Lc  main.o [1]
+main{1}{2}{3}{4}::cryDetectedTimes
+                        0x20001590    0x1  Data  Lc  main.o [1]
+main{1}{2}{3}{4}::dataCounter
+                        0x2000158a    0x2  Data  Lc  main.o [1]
+main{1}{2}{3}{4}::fftRes
+                        0x20001510   0x40  Data  Lc  main.o [1]
+main{1}{2}{3}{4}::hapr  0x20001588    0x2  Data  Lc  main.o [1]
+main{1}{2}{3}{4}::haprArr
+                        0x20001010  0x200  Data  Lc  main.o [1]
+main{1}{2}{3}{4}::haprTt
+                        0x20001580    0x4  Data  Lc  main.o [1]
+main{1}{2}{3}{4}::maxFreq
+                        0x20001586    0x2  Data  Lc  main.o [1]
+main{1}{2}{3}{4}::maxFreqArr
+                        0x20000a10  0x200  Data  Lc  main.o [1]
+main{1}{2}{3}{4}::maxFreqIndex
+                        0x20001584    0x2  Data  Lc  main.o [1]
+main{1}{2}{3}{4}::maxFreqPower
+                        0x2000156c    0x4  Data  Lc  main.o [1]
+main{1}{2}{3}{4}::maxFreqPowerArr
+                        0x20000c10  0x200  Data  Lc  main.o [1]
+main{1}{2}{3}{4}::maxFreqPowerTt
+                        0x20001578    0x4  Data  Lc  main.o [1]
+main{1}{2}{3}{4}::maxFreqTt
+                        0x20001574    0x4  Data  Lc  main.o [1]
+main{1}{2}{3}{4}::silArr
+                        0x20001210  0x200  Data  Lc  main.o [1]
+main{1}{2}{3}{4}::silTt
+                        0x2000158c    0x2  Data  Lc  main.o [1]
+maxFreqAnalysis         0x000004e5   0x3a  Code  Gb  main.o [1]
+nrf_adc_configure       0x00000b3f   0x56  Code  Gb  nrf_adc.o [1]
+nrf_adc_conversion_event_clean
+                        0x00000191    0x8  Code  Lc  main.o [1]
+nrf_adc_input_select    0x00000153   0x2a  Code  Lc  main.o [1]
+nrf_adc_input_select    0x00000b15   0x2a  Code  Lc  nrf_adc.o [1]
+nrf_adc_int_enable      0x00000183    0x6  Code  Lc  main.o [1]
+nrf_adc_result_get      0x0000017d    0x6  Code  Lc  main.o [1]
+nrf_adc_start           0x00000189    0x8  Code  Lc  main.o [1]
+nrf_uart_errorsrc_get_and_clear
+                        0x00001119   0x10  Code  Lc  nrf_drv_uart.o [1]
+nrf_uart_event_check    0x000010e5   0x14  Code  Lc  nrf_drv_uart.o [1]
+nrf_uart_event_clear    0x000010dd    0x8  Code  Lc  nrf_drv_uart.o [1]
+nrf_uart_int_disable    0x00001111    0x8  Code  Lc  nrf_drv_uart.o [1]
+nrf_uart_int_enable_check
+                        0x000010f9   0x18  Code  Lc  nrf_drv_uart.o [1]
+nrf_uart_rxd_get        0x00001129    0xa  Code  Lc  nrf_drv_uart.o [1]
+nrf_uart_task_trigger   0x0000113b    0x8  Code  Lc  nrf_drv_uart.o [1]
+nrf_uart_txd_set        0x00001133    0x8  Code  Lc  nrf_drv_uart.o [1]
+rx_byte                 0x0000116d   0x2a  Code  Lc  nrf_drv_uart.o [1]
+rx_done_event           0x000011a1   0x2a  Code  Lc  nrf_drv_uart.o [1]
+sqrt                    0x00000caf         Code  Gb  sqrt.o [4]
+sqrtl                   0x00000caf         Code  Gb  sqrt.o [4]
+tx_byte                 0x00001143   0x2a  Code  Lc  nrf_drv_uart.o [1]
+tx_done_event           0x000011cb   0x2a  Code  Lc  nrf_drv_uart.o [1]
+
+
+[1] = D:\YADisk\#1_work\#cryingBaby\nRF51_SDK_10.0.0_dc26b5e\examples\peripheral\cryDetection\pca10028\iar\_build
+[2] = command line
+[3] = dl6M_tlf.a
+[4] = m6M_tl.a
+[5] = rt6M_tl.a
+
+  5 472 bytes of readonly  code memory
+    172 bytes of readonly  data memory
+  5 522 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
